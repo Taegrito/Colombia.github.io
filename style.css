@@ -1,0 +1,638 @@
+*
+  {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    font-family: 'Rubik', sans-serif;
+
+  }
+  :root
+  {
+    --hover: hsl(0, 0%, 100%);
+}
+section
+{
+    padding: 50px 10%;
+}
+header
+{
+display: flex;
+position: fixed;
+width: 100%;
+z-index: 1000;
+align-items: center;
+justify-content: space-between;
+padding: 13px 4%;
+background: linear-gradient(
+    to right,
+    rgb(252, 255, 95) 20%,
+    rgb(252, 255, 95) 20% 30%,
+    rgb(60, 122, 255) 40% 60%,
+    rgb(60, 122, 255) 60% 76%,
+    rgb(255, 48, 48) 80%);
+}
+header .imag
+{
+  height: 42px;
+}
+.logo
+{
+    font-size: 1.61rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.navbar
+{
+  display: flex;
+}
+
+.navbar a
+{
+  font-size: 1rem;
+  padding: 10px 20px;
+  color: var(--text-color);
+  font-weight: 500;
+
+}
+.navbar a:hover
+{
+  color: var(--hover);
+}
+.btn
+{
+background: #c5c5c58a;
+color: #000000;
+padding: 15px ;
+border-radius: 0.5rem;
+}
+
+.btn:hover
+{
+color: rgb(255, 255, 255);
+}
+/* .slider-container
+{ display: flex;
+width: 100%;
+height: 35rem;
+overflow-x: scroll;
+scroll-snap-type: x mandatory;
+;}
+.slider-container img
+{ 
+flex: 0 0 100%;
+width: 100%;
+object-fit: cover;
+scroll-snap-align: center;
+} */
+.carrusel
+{
+  padding:120px 10%;
+  width: 100%;
+}
+.contenedor{
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+}
+
+.slider-contenedor{
+  width: 100%;
+  display: flex;
+  
+}
+
+.contenido-slider{
+  width: 100%;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.contenido-slider > img{
+  width: 90%;
+  border-radius: 2rem;
+}
+
+.contenido-slider > div{
+  width: 100%;
+}
+
+
+@media screen and (max-width:900px){
+  .contenido-slider > img{
+      width: 250px;
+  }
+
+  .contenido-slider > div{
+      width: 40%;
+  }
+
+  .contenido-slider h2{
+      font-size: 23px;
+  }
+}
+
+
+@media screen and (max-width:600px){
+  .contenido-slider{
+     flex-direction: column-reverse;
+  }
+
+  .contenido-slider > div{
+      width: 80%;
+  }
+
+}
+.about-container
+{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 1rem;
+justify-content: center;
+}
+.about-img img
+{
+width: 85%;
+border-radius: 0.5rem;
+}
+.about-text p
+{
+font-size: 1.2rem;
+text-align: justify;
+margin-bottom: 20px;
+}
+.btn-1 b {
+  background: #0750af72;
+  padding: 15px ;
+  border-radius: 0.5rem;
+
+}
+.btn-1
+{
+transition: .2s;   
+color: #000000;
+padding: 15px ;
+display: flex;
+  justify-content: center;
+}
+.about-text b:hover
+{
+  background: #0750afa4;
+}
+.btn-1:hover
+{
+color: rgb(255, 255, 255);
+}
+  
+.carrusel
+{
+  background:#ffffff;
+padding: 3rem;
+}
+.introduccion
+{
+  background: #0750af4d; 
+  padding:125px 10%;
+}
+.introduccion h2
+{  font-size: 2rem ;  
+
+text-align: center;
+line-height: 6rem;
+}
+
+.informacion
+{
+  padding:100px 10%;
+  background:#fff;
+}
+.inf-container 
+{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.inf-container .card
+{
+  display: flex;
+  width: 300px;
+  margin: 15px;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* border: 5px solid rgb(4 5 87 / 35%); */
+  border-radius: 10px;
+  box-shadow: 0px 2px 7px #2048cc;
+}
+.card img
+{
+  width: 100%;
+  height: 60%;
+  padding: 20px;
+
+}
+.card.active
+{
+  width: 330px;
+  padding: 40px 20px;
+  background: #0750af7a;
+  color: #fff; 
+}
+
+.card a
+{
+  display: inline-block;
+  margin-top: 30px;
+  background: rgb(4 5 98 / 78%);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: .2s;
+}
+.card a:hover
+{
+background:#0750afc0;
+}
+.card.active a
+{
+  background: rgb(4 5 87 / 61%);
+  color: #fff;
+}
+.card.active a:hover
+{
+  background: #0750afc0;
+}
+
+.play a
+{
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  background: rgba(4, 6, 98, 0.689);
+  color: #fff;
+    align-content: center;
+    margin: auto;
+    justify-content: center;
+  transition: .2s;
+  display: flex;
+    width: 10%;
+    
+} 
+.play a:hover
+{
+background:(#0750af90);
+}
+.cta
+{
+    background-color: rgb(67, 108, 157);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 1.2rem 3rem;
+    border-radius: 10px;
+    margin: auto;
+}
+.modal 
+{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #4f6b80;
+    z-index: 1000;
+    opacity: var(--opacity);
+    pointer-events: var(--pointer);
+    transition: opacity .5s;
+    
+    --opacity: 0;
+    --pointer:none;
+}
+.modal:target
+{
+    --opacity:1;
+    --pointer:unset;
+}
+.modal__container
+{
+    margin: auto;
+    background: #ffffffc9;
+    width: 90%;
+    max-width: 600px ;
+    max-height: 100%;
+    overflow: hidden;
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    border-radius: 1rem;
+}
+.modal__picture
+{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 400px;
+    margin-bottom: 2rem;
+}
+.modal__img
+{
+    width: 100%;
+    display: block;
+}
+.modal__title
+{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.modal__parrafo
+{
+    margin-top: 1rem;
+    margin-bottom:1rem;
+    color: rgb(0, 0, 0);
+    line-height: 1.5;
+}
+.modal__cerrar
+{
+    display: inline-block;
+    border: solid 1px rgb(84, 84, 85);
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(84, 84, 85);
+    margin: 10px;
+    
+}
+
+
+.registro 
+{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url(./col.img/reg.jpg)  ;    
+z-index: 1000;
+    opacity: var(--opacity);
+    pointer-events: var(--pointer);
+    transition: opacity .5s;
+    
+    --opacity: 0;
+    --pointer:none;
+}
+.registro:target
+{
+    --opacity:1;
+    --pointer:unset;
+}
+.reg__container
+{
+    margin: auto;
+    background: #ffffffc9;
+    width: 90%;
+    max-width: 600px ;
+    max-height: 100%;
+    overflow: hidden;
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    border-radius: 1rem;
+}
+
+.reg__title
+{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 4rem;
+
+}
+
+.modal__cerrar
+{
+    display: inline-block;
+    border: solid 1px rgb(84, 84, 85);
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(84, 84, 85);
+    margin: 10px;
+}
+.contacto-form
+{
+   display: grid;
+   place-items: center;
+   margin-top: 2rem;
+/* margin-top: 2rem;
+    margin-bottom:1rem;
+    color: rgb(0, 0, 0);
+line-height: 4rem;*/
+}
+.contacto-form form
+{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+form, input, textarea
+{
+    padding: 15px;
+    border-radius: 0.5rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: hsla(0, 0%, 100%, 0.384);
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+form input::placeholder, textarea::placeholder
+{
+    color: var(--text-color);
+}
+form textarea
+{
+    height: 200px;
+    resize: none;
+}
+.contacto-boton
+{
+    width: 160px;
+    background: #7a7a7a98;
+    color: #000000;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-left: 35%;
+    cursor: pointer;
+    
+
+    border: solid 1px rgb(84, 84, 85);
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(84, 84, 85);
+}
+.contacto-boton:hover
+{
+    background: var(--hover);
+}
+.juego {
+  text-align: center;
+  padding:20px;
+  background: rgba(60, 122, 255, 0.436);
+   
+}
+
+.juego h2 {
+  padding: 90px 10px;
+  font-size: 2rem ;  
+  text-align: center;
+  line-height: 6rem;
+}
+.play {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espacio entre los botones */
+  flex-wrap: wrap; /* Permite que los elementos se acomoden en varias filas si la pantalla es pequeña */
+}
+
+/* Estilo para cada "jugar" individual */
+.jugar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 150px;
+}
+
+/* Imágenes de los juegos */
+.jugar img {
+  margin-bottom: 10px; /* Espacio entre la imagen y el botón */
+}
+
+/* Botones para jugar */
+.jugar a {
+  display: inline-block;
+  padding: 10px 50px;
+  justify-content: space-between;
+  background-color: #547fc0; /* Color del botón */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.jugar a:hover {
+  background-color: #0750afc0; /* Cambia el color al hacer hover */
+}
+
+/* Responsive: Ajusta la disposición en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .play {
+      flex-direction: column;
+  }
+}
+
+.footer-dark {
+  padding:20px 3px;
+  align-content: center;
+  color:#000000e7;
+  background: linear-gradient(
+    to right,
+    rgb(252, 255, 95) 20%,
+    rgb(252, 255, 95) 20% 30%,
+    rgb(60, 122, 255) 40% 60%,
+    rgb(60, 122, 255) 60% 76%,
+    rgb(255, 48, 48) 80%);
+}
+
+.footer-dark h3 {
+  color: #001483e0;
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:25px;
+}
+
+.footer-dark ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:1rem;
+  margin-bottom:0;
+}
+
+.footer-dark ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.9;
+  
+}
+
+.footer-dark ul a:hover {
+  color: #ffffff;
+  opacity:0.8;
+}
+
+  .footer-dark .item:not(.social) {
+    text-align:center;
+    padding-bottom:20px;
+  }
+
+
+.footer-dark .item.text {
+  font-size: 1.2rem;
+  color: #000000;
+  align-items: center;
+}
+
+.footer-dark .item.social {
+  text-align:center;
+}
+
+
+  .footer-dark .item.social {
+    text-align:center;
+    margin-top:20px;
+  }
+
+
+.footer-dark .item.social a {
+  font-size:1.50rem;
+
+  text-align:center;
+  border-radius:100%;
+  margin:5px 8px;
+  opacity:0.7;
+}
+
+.footer-dark .item.social a:hover {
+  color: #fff;
+  opacity:100;
+}
+
+.footer-dark .copyright {
+  display: grid;
+  text-align:center;
+  padding-top:24px;
+  opacity:0.6;
+  font-size:1.2rem;
+  margin-bottom:0;
+}
+.foot-img img
+{
+width: 4rem;
+border-radius: 0.5rem;
+}

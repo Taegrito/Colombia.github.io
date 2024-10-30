@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="css/inicio.css">
+</head>
+<body class="bg-primary">
+  
+  <div id="layoutAuthentication">
+    <div id="layoutAuthentication_content">
+        
+    <main>
+     <section class="login">
+        <div class="container">
+          <div class="formulario">
+            <center><div class="card-header"><h3 class="text-center font-weight-light my-4">Iniciar sesión</h3></div></center>
+          <form action="login.php" method="POST">
+            
+              <div class="row mb-3">
+                <div class="row mb-3">
+                    <div class="form-floating mb-3 mb-md-0">
+                      <label for="inputFirstName">Identificación</label>
+                      <input class="form-control" type="text" name="identificacion" placeholder="Identificación" required>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="row mb-3">
+                  <div class="form-floating">
+                    <label for="inputLastName">Contraseña</label>
+                    <input class="form-control" type="password" name="contrasena" placeholder="Contraseña" required>
+                  </div>
+                </div>
+                <div class="mt-4 mb-0">
+                  <center><div class="d-grid"></div>
+                    <input type="submit" class="btn btn-primary btn-block" value="Iniciar Sesión">
+                  </div></center>
+                </div>
+              </div>
+            
+          </form>
+         
+          <center><a href="register.html">Registrarse</a></center>
+        </div>
+     </section>
+    </main>
+</body>
+</html>
